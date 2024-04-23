@@ -10,10 +10,10 @@ const Header = ({passingprops}) => {
     <>
      <header>
       
-      <Link style={{color: 'white'}} to="/"><FaCode size={35}/></Link>
+      <Link style={{color: 'white', marginLeft: '1%'}} to="/"><FaCode size={35}/></Link>
       
-      <div id='logo-dropdown'>
-      <div id='dropdown' style={{display: 'flex'}}>
+      <div id='logo-dropdown' style={{marginLeft: '-9%'}}>
+      <div id='dropdown' style={{display: 'flex', width:'fit-content'}}>
       <Dropdown style={{margin: "0px 2px"}}>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
         Tutorials
@@ -69,7 +69,7 @@ const Header = ({passingprops}) => {
      
       </div>
      
-      <h2>W4Schools</h2>
+      <h2 style={{marginLeft: '-5%'}}>W4Schools</h2>
 
 
   <div id='search-register'>
