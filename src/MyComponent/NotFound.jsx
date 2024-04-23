@@ -18,7 +18,7 @@ const NotFound = () => {
 
         <div style={{display:'flex', justifyContent: 'center', height: '40px'}}>
 
-          <Link to='/Java/Introduction' style={{display: 'flex', justifyContent: "center", paddingTop: '4px', width: '250px', textDecoration: 'none', backgroundColor: '#192070', color: 'white',borderRadius: "5px", fontSize: '1.2rem'}}>
+          <Link to='/Java/Introduction to Java' style={{display: 'flex', justifyContent: "center", paddingTop: '4px', width: '250px', textDecoration: 'none', backgroundColor: '#192070', color: 'white',borderRadius: "5px", fontSize: '1.2rem'}}>
             Take me home
           </Link> 
           

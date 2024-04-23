@@ -17,6 +17,22 @@ import JavaScriptdata from './CourseData/javascriptdata';
 import JavaScript from './Courses/javascript';
 import TypeScriptdata from './CourseData/typescriptdata';
 import TypeScript from './Courses/typescript';
+import JQueryData from './CourseData/jquerydata';
+import JQuery from './Courses/jquery';
+import AngularData from './CourseData/angulardata';
+import Angular from './Courses/angular'
+import ReactData from './CourseData/reactdata';
+import Reactjs from './Courses/react'
+import VueData from './CourseData/vuedata';
+import Vue from './Courses/vue'
+import NodeData from './CourseData/nodedata';
+import Node from './Courses/node'
+import SpringData from './CourseData/springdata'
+import Spring from './Courses/spring'
+import MongoDBData from './CourseData/mongodbdata'
+import MongoDB from './Courses/mongodb'
+import RustData from './CourseData/rustdata'
+import Rust from './Courses/rust'
 
 
 let router = createBrowserRouter([
@@ -28,7 +44,7 @@ let router = createBrowserRouter([
       path: "/Java",
       element: <Javadata/>,
       children: [{
-        path: "/Java/Introduction",
+        path: "/Java/Introduction to Java",
         element: <Java/>,
       }]
     },
@@ -52,7 +68,7 @@ let router = createBrowserRouter([
       path: "/PHP",
       element: <PHPdata/>,
       children: [{
-        path: "/PHP/Install",
+        path: "/PHP/Syntax",
         element: <PHP/>
       }]
     },
@@ -71,8 +87,71 @@ let router = createBrowserRouter([
         path: "/TypeScript/Introduction to TypeScript",
         element: <TypeScript/>
       }]
-    }
-    
+    },
+    {
+      path: "/jQuery",
+      element: <JQueryData/>,
+      children: [{
+        path: "/jQuery/Selectors",
+        element: <JQuery/>
+      }]
+    },
+    {
+      path: "/Angular",
+      element: <AngularData/>,
+      children: [{
+        path: "/Angular/CLI",
+        element: <Angular/>
+      }]
+    },
+    {
+      path: "/React",
+      element: <ReactData/>,
+      children: [{
+        path: "/React/JSX",
+        element: <Reactjs/>
+      }]
+    },
+    {
+      path: "/Vue",
+      element: <VueData/>,
+      children: [{
+        path: "/Vue/Vue Instance",
+        element: <Vue/>
+      }]
+    },
+    {
+      path: "/Node",
+      element: <NodeData/>,
+      children: [{
+        path: "/Node/Node.js Basics",
+        element: <Node/>
+      }]
+    },
+    {
+      path: "/Spring",
+      element: <SpringData/>,
+      children: [{
+        path: "/Spring/Core Concepts",
+        element: <Spring/>
+      }]
+    },
+    {
+      path: "/MongoDB",
+      element: <MongoDBData/>,
+      children: [{
+        path: "/MongoDB/Introduction to MongoDB",
+        element: <MongoDB/>
+      }]
+    },
+    {
+      path: "/Rust",
+      element: <RustData/>,
+      children: [{
+        path: "/Rust/Enums",
+        element: <Rust/>
+      }]
+    },
   
   ]
   }

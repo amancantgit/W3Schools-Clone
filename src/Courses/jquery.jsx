@@ -51,3 +51,4 @@ Whether you're a beginner or an experienced developer, jQuery's simplicity and v
         </div>
     );
 }
+

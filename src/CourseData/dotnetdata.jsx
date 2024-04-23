@@ -4,7 +4,6 @@ import MyPagination from '../MyComponent/pagination'
 
 const data = [
     "Introduction to .NET",
-    "C# Basics",
     "Data Types",
     "Variables",
     "Control Flow and Loops",

@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import MyPagination from '../MyComponent/pagination';
 
-const data = ["Install", "Syntax","Comments","Variables", "Scope","Echo", "Data Types", "Strings", 
+const data = ["Syntax","Comments","Variables", "Scope","Echo", "Data Types", "Strings", 
     "Escape Characters", "Casting", "Operators",  "Nested if","Switch", "Loops", "While Loop", "Do While Loop", "For Loop", "Foreach Loop", "Break", "Continue", "Functions", "Arrays" ]
 
 
