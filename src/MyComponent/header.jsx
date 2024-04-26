@@ -5,9 +5,10 @@ import Col from 'react-bootstrap/Col';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FaCode } from "react-icons/fa6";
 
-const Header = ({passingprops}) => {
+const Header = ({passingprops, darkMode}) => {
   return (
     <>
+     {/* <header style={{ background: darkMode ? 'black' : 'white', color: darkMode ? 'white' : 'black' }}> */}
      <header>
       
       <Link style={{color: 'white', marginLeft: '1%'}} to="/"><FaCode size={35}/></Link>

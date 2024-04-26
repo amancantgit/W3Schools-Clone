@@ -28,7 +28,11 @@ export default function Home() {
 
     return (
         <>
-            <Header passingprops={handleSearch} />
+            <Header passingprops={handleSearch} darkMode={darkMode}/>
+            
+            <button onClick={toggleDarkMode} id='dark'>
+              <img src={logo} alt="" style={{height: '20px', margin: "auto"}}/>
+            </button>
 
             <Navbar style={{ position: 'sticky', top: '0', zIndex: '33' }} collapseOnSelect expand="lg" className="bg-body-tertiary">
                 <Container id='parentCon' style={{ overflow: 'auto', scrollbarWidth: 'none' }} fluid>
@@ -43,8 +47,8 @@ export default function Home() {
                 </Container>
             </Navbar>
 
-            <div style={{ display: 'flex', height: '97vh' }}>
-                <div id='main-outlet'>
+            <div style={{ display: 'flex', height: '97vh'  }}>
+                <div id='main-outlet' >
                     <Outlet />
                 </div>
 
@@ -56,9 +60,6 @@ export default function Home() {
             <Footer />
 
 
-            <button onClick={toggleDarkMode} id='dark'>
-              <img src={logo} alt="" style={{height: '20px', margin: "auto"}}/>
-            </button>
         </>
     );
 }
