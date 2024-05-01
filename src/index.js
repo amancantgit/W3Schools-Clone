@@ -33,6 +33,7 @@ import MongoDBData from './CourseData/mongodbdata'
 import MongoDB from './Courses/mongodb'
 import RustData from './CourseData/rustdata'
 import Rust from './Courses/rust'
+import Syntax from './Courses/syntax';
 
 
 let router = createBrowserRouter([
@@ -46,6 +47,10 @@ let router = createBrowserRouter([
       children: [{
         path: "/Java/Introduction to Java",
         element: <Java/>,
+      },
+      {
+        path: "/Java/Syntax",
+        element: <Syntax/>
       }]
     },
     {
