@@ -22,7 +22,7 @@ export default function Home() {
 
     // SEARCH USER
     function handleSearch(text) {
-        const filteredUser = arr.filter((val) => val.includes(text));
+        const filteredUser = arr.filter((val) => val.toLowerCase().includes(text.toLowerCase()));
         setUser(filteredUser);
     }
 
@@ -40,7 +40,7 @@ export default function Home() {
                     <Navbar.Collapse id="responsive-navbar-nav" >
                         <Nav className="me-auto" navbarScroll>
                             {user.map((val) => (
-                                <NavLink id='nav-link' className={({ isActive }) => isActive ? "activelink" : ""} to={val}>{val}</NavLink>
+                                <NavLink id='nav-link' className={({ isActive }) => isActive ? "activelink" : ""} to={val} >{val}</NavLink>
                             ))}
                         </Nav>
                     </Navbar.Collapse>
